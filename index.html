@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>skyscanner API workspace</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- Added link to the jQuery Library -->
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <!-- CSS styles sheet -->
+  <link rel="stylesheet" src="styles.css">
+  <!-- Logic.js -->
+  <script src="logic.js"></script>
+  <!--jquring UI plugin-->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  
+  
+</head>
+<body>
+  <div class="container">
+    <!-- Jumbotron  -->
+    <div class="jumbotron text-center">
+      <h1>SkyScanner API Test</h1>
+    </div>
+    
+    <h1>Car Rental</h1>
+    <form>
+      <div class="ui-widget">
+        <label for="tags">Where are you going?: </label>
+        <input id="where">
+        <button type="button" class="btn btn-info btn-lg" id="btn-places"> Recommended Places </button>
+      </div>
+      <div class="ui-widget">
+        <label for="tags">Pickup Location: </label>
+        <input id="from">
+      </div>
+      
+      <div class="ui-widget">
+        <label for="tags">Dropoff Location: </label>
+        <input id="to">
+      </div>
+      
+      <br><br>
+      <p>Pickup Date: <input type="text" id="depart"></p> 
+      <div class="form-group">
+        <label for="pickupTime">Hour (24h)</label>
+        <select class="form-control" id="hrUp">
+          <option>00</option>
+          <option>01</option>
+          <option>02</option>
+          <option>03</option>
+          <option>04</option>
+          <option>05</option>
+          <option>06</option>
+          <option>07</option>
+          <option>08</option>
+          <option>09</option>
+          <option>10</option>
+          <option>11</option>
+        </select>
+        <label for=∫"pickupTime">Min (15 min interval)</label>
+        <select class="form-control" id="minUp">
+          <option>00</option>
+          <option>15</option>
+          <option>30</option>
+          <option>45</option>
+        </select>
+      </div>
+      <p>Dropoff Date: <input type="text" id="return"></p>
+      <div class="form-group">
+        <label for="dropoffTime">Hour (24h)</label>
+        <select class="form-control" id="hrOff">
+          <option>00</option>
+          <option>01</option>
+          <option>02</option>
+          <option>03</option>
+          <option>04</option>
+          <option>05</option>
+          <option>06</option>
+          <option>07</option>
+          <option>08</option>
+          <option>09</option>
+          <option>10</option>
+          <option>11</option>
+        </select>
+        <label for="dropoffTime">Min (15 min interval)</label>
+        <select class="form-control" id="minOff">
+          <option>00</option>
+          <option>15</option>
+          <option>30</option>
+          <option>45</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="dropoffTime">Driver's Age</label>
+        <select class="form-control" id="age">
+          <option>21</option>
+          <option>22</option>
+          <option>23</option>
+        </select>
+      </div>
+      <button class="btn btn-info btn-lg" id="btn-call"> Search Cars </button>
+    </form> 
+    
+    <div id="carResults">
+      <!--Place Holder-->
+    </div>
+    
+    
+</body>
+  
+</html>
